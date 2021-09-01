@@ -30,7 +30,7 @@ public class SelectSort {
 
         int k,min; //最小数下标k，值为min
 
-        for(int i = 0; i < a.length; ++i){
+        for(int i = 0; i < a.length - 1; ++i){//第i趟排序
 
             k = i;
             min = a[i];
