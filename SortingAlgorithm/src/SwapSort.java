@@ -2,17 +2,17 @@ public class SwapSort {
 
     public static void main(String[] args) {
 
-        //直接插入排序测试
+
         int[] a = {2,1,8,9,23,12,21,5};
 
         //int[] end = BubbleSort(a);
 
-
+//        //冒泡排序测试
 //        for (int i = 0; i < end.length; ++i){
 //            System.out.print(end[i] + " ");
 //        }
 
-
+        //快速排序测试
         QuickSort(a, 0 , a.length - 1);
 
         for (int i = 0; i < a.length; ++i){

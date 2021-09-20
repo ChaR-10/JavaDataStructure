@@ -1,12 +1,10 @@
 public class SelectSort {
 
     public static void main(String[] args) {
-        //直接插入排序测试
+
         int[] a = {2,1,8,9,23,12,21,5};
-
+        //简单选择排序测试
         int[] end = SimpleSelectSort(a);
-
-
 
         for (int i = 0; i < end.length; ++i){
             System.out.print(end[i] + " ");
