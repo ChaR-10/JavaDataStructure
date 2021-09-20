@@ -66,7 +66,7 @@ public class SwapSort {
                     a[i] = a[j];
                     ++i;
                 }
-                while ((i < j && a[i] < temp)) i++;//向右找比基准数大的，并交换
+                while (i < j && a[i] < temp) i++;//向右找比基准数大的，并交换
                 if (i < j) {
                     a[j] = a[i];
                     --j;
