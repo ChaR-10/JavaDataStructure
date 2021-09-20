@@ -31,7 +31,7 @@ public class SwapSort {
 
             flag = 0;
 
-            for (int j = 0; j < a.length - i -1; ++j){
+            for (int j = 0; j < a.length - i - 1; ++j){
 
                 if (a[j] > a[j+1]){
 
