@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 public class SwapSort {
 
     public static void main(String[] args) {
@@ -39,6 +41,47 @@ public class SwapSort {
                     a[j+1] = a[j];
                     a[j] = temp;
                     flag = 1;
+
+                }
+
+            }
+
+            if(flag == 0) //数组有序直接返回
+                return a;
+        }
+
+        return a;
+    }
+
+
+    @Test
+    public void testBubbleSort(){
+        int[] a = {2, 1, 8, 9, 23, 12, 21, 5};
+
+        //冒泡排序测试
+        int[] end = BubbleSortNew(a);
+        for (int i = 0; i < end.length; ++i){
+            System.out.print(end[i] + " ");
+        }
+    }
+
+    public static int[] BubbleSortNew(int a[]){
+
+        int temp;
+        int flag;
+
+        for (int i = a.length - 1; i >= 1 ; --i){
+
+            flag = 0;
+
+            for (int j = 1; j <= i; ++j){
+
+                if (a[j-1] > a[j]){
+
+                    temp   = a[j-1];
+                    a[j-1] = a[j];
+                    a[j]   = temp;
+                    flag   = 1;
 
                 }
 
